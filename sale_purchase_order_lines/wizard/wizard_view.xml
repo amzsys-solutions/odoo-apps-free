@@ -1,0 +1,52 @@
+<!-- <odoo>-->
+
+<!--    <record model="ir.ui.view" id="sale_wizard_form_view">-->
+<!--        <field name="name">wizard.form</field>-->
+<!--        <field name="model">sale.order.line.wizard</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form string="wizard">-->
+<!--                <group>-->
+<!--                    <field name="sale_order_line_wizard" >-->
+<!--                        <form>-->
+<!--                                <field name="name"/>-->
+<!--                                <field name="list_price"/>-->
+<!--                                <field name="taxes_id"/>-->
+<!--                                <field name="standard_price"/>-->
+<!--                        </form>-->
+<!--                        <tree string="Add Product" editable="bottom">-->
+<!--                                <field name="name"/>-->
+<!--                                <field name="list_price"/>-->
+<!--                                <field name="taxes_id"/>-->
+<!--                                <field name="standard_price"/>-->
+<!--                        </tree>-->
+<!--                    </field>-->
+<!--                </group>-->
+<!--                <footer>-->
+<!--                    <button name="add_sale_product" string="Add Product" type="object" class="oe_highlight"/>-->
+<!--                    or-->
+<!--                    <button special="cancel" string="Cancel"/>-->
+<!--                </footer>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--  <record id="multiple_sale_product_wizard" model="ir.actions.act_window">-->
+<!--    <field name="name">Multiple Products Sale</field>-->
+<!--    <field name="res_model">sale.order.line.wizard</field>-->
+<!--    <field name="view_mode">form</field>-->
+<!--    <field name="view_id" ref="sale.sale_wizard_form_view"/>-->
+<!--    <field name="target">new</field>-->
+<!--  </record>-->
+
+<!--  <record model="ir.ui.view" id="sale_order_form">-->
+<!--    <field name="name">sale.order.form</field>-->
+<!--    <field name="model">sale.order</field>-->
+<!--    <field name="inherit_id" ref="sale.view_order_form"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--      <xpath expr="//notebook/page[@name='order_lines']/field[@name='order_line']" position="before">-->
+<!--        <button name='%(multiproduct.multiple_sale_product_wizard)d' string="Multiple Products" type="action"/>-->
+<!--      </xpath>-->
+<!--    </field>-->
+<!--  </record>-->
+
+<!--</odoo>-->
